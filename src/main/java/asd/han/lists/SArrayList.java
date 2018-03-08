@@ -79,6 +79,14 @@ public class SArrayList<T> implements Collection<T>, Iterable<T> {
         System.arraycopy(old, 0, data,0, old.length);
     }
 
+    @Override
+    public String toString() {
+        return "SArrayList{" +
+                "data=" + Arrays.toString(data) +
+                ", length=" + length +
+                '}';
+    }
+
     public boolean remove(Object o) {
         return false;
     }
